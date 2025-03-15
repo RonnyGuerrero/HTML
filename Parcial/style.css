@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: fantasy;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    background-color: #f4f4f4;
+
+}
+h1{
+    color: #333;
+    font-size: 3em;
+}
+h2{
+    color: #333;
+    font-size: 2em;
+}
+h3{
+    color: #333;
+    font-size: 1.5em;
+}
+p{
+    color: #333;
+    font-size: 1em;
+}
+button{
+    font-size: 1em;
+    color: white;
+    font-weight: 200;
+    background-color: rgb(199, 152, 51);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(7, 255, 7);
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#main{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#nosotros {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-bottom: gray 1px solid;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: right;
+
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2em;
+}
+
+nav p {
+    text-align: left;
+    font-size: 3em;
+    display: flex;
+    
+}
+nav p::before {
+    content: url('img/cat.jpeg'); /* Replace with your image path */
+    display: block;
+    margin-right: 10px;
+}
+.carta {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    width: calc(25% - 40px); 
+    margin: 10px;
+}
+.carta:nth-child(1)::before {
+    content: url('img/dad.jpg');
+    display: block;
+    margin-bottom: 1px;
+    
+}
+.carta:nth-child(2)::before {
+    content: url('img/miniaturas.jpg');
+    display: block;
+    margin-bottom: 1px;
+    
+}
+.carta:nth-child(3)::before {
+    content: url('img/historia.jpg');
+    display: block;
+    margin-bottom: 1px;
+    
+}
+.carta:nth-child(4)::before {
+    content: url('img/mundo.jpg');
+    display: block;
+    margin-bottom: 1px;
+    
+}
